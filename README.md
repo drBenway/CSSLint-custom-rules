@@ -1,7 +1,19 @@
 CSSLint-custom-rules
 ====================
 
-custom rules for CSSLint. Not all the rules below are provided.
+custom rules for CSSLint. 
+
+This repo has a set of custom rules that you can add to csslint.
+Copy paste them as you see fit. 
+
+I'm using the csslint node version. For me adding the rules is done by,
+navigating to /usr/local/lib/node_modules/csslint/lib/ and altering the csslint-node.js file
+For a video example, see the movie examples folder.
+
+
+Rules:
+======
+Not all the rules below are provided. I do plan to do this in future versions
 
 * disallow classes with underscores (should use dash)
 * disallow classes with uppercases
@@ -20,6 +32,7 @@ In this case h1 will not be bold, wich is confusing
 * end vendor prefixes with final recomendation
 => webkit-border-radius: 20px;
 border-radius: 20px;
+More info can be found in the wiki
 
 
 generating report:
