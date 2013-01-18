@@ -29,7 +29,7 @@ CSSLint.addRule({
                             modifier = part.modifiers[k];
                             if (modifier.type == "class") {
                                 if (/[^\.a-z0-9-]/.test(modifier)) {
-                                    reporter.report("Classnames should follow naming conventions: only alphanumeric values(all lowercase) and dashes!: " + modifier, modifier.line, modifier.col, rule);
+                                    reporter.report("Use only alphanumeric character ([a-z]lowercase) and dashes in classnames. " + modifier, modifier.line, modifier.col, rule);
                                 }
                             }
 

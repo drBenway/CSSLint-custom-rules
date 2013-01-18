@@ -19,7 +19,7 @@ CSSLint.addRule({
             var name = name.toLowerCase();
             // the check is handled entirely by the parser-lib (https://github.com/nzakas/parser-lib)
            if (name==="list-style") {
-                  reporter.report("Don't use shorthand notation for list-style: " + name, event.line, event.col, rule);
+                  reporter.report("Don't use shorthand notation for list-style: ", event.line, event.col, rule);
            }
 
         });

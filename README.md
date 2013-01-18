@@ -20,3 +20,20 @@ In this case h1 will not be bold, wich is confusing
 * end vendor prefixes with final recomendation
 => webkit-border-radius: 20px;
 border-radius: 20px;
+
+
+generating report:
+==================
+csslint has a cli option to export your results to an xml file:
+csslint yourcss.css --format=lint-xml > csslint.xml
+
+After exporting, you can transform the output with the xslt file in this repo.
+Mac users can use xsltproc in the terminal like so:
+xsltproc csslint-report.xslt csslint.xml > csslint-report.html
+to generate an html file with the results.
+
+For your convenience, I also included a bash script that does all this in one go. 
+just "bash csslint-report.sh path/to/your/cssfile"
+
+
+
