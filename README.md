@@ -7,7 +7,7 @@ This repo has a set of custom rules that you can add to csslint.
 Copy paste them as you see fit. 
 
 I'm using the csslint node version. For me adding the rules is done by,
-navigating to "/usr/local/lib/node_modules/csslint/lib/"" and altering the csslint-node.js file.
+navigating to "/usr/local/lib/node_modules/csslint/lib/ and altering the csslint-node.js file.
 For a video example, see the movie examples folder.
 
 
@@ -42,7 +42,9 @@ csslint yourcss.css --format=lint-xml > csslint.xml
 
 After exporting, you can transform the output with the xslt file in this repo.
 Mac users can use xsltproc in the terminal like so:
+
 xsltproc csslint-report.xslt csslint.xml > csslint-report.html
+
 to generate an html file with the results.
 
 For your convenience, I also included a bash script that does all this in one go. 
