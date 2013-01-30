@@ -51,4 +51,6 @@ For your convenience, I also included a bash script that does all this in one go
 just "bash csslint-report.sh path/to/your/cssfile"
 
 
-
+Movies
+======
+To help you get an idea how all this works, visit the movie section
